@@ -4,23 +4,61 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Demo Video</title>
+
   <style>
     body {
       font-family: Arial, sans-serif;
       text-align: center;
-      background-color: #f7f9fb;
+      background: linear-gradient(135deg, #0b1e39, #0a1023);
+      background-size: cover;
       margin: 0;
-      padding: 20px;
+      padding: 40px 20px;
+      color: white;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
     }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 30px;
+      color: #ffffff;
+    }
+
     .video-container {
+      width: 100%;
       max-width: 900px;
-      margin: 0 auto;
+      background: #ffffffcc;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      margin-bottom: 40px;
     }
+
     iframe {
       width: 100%;
       height: 500px;
       border: none;
       border-radius: 8px;
+    }
+
+    a.back-btn {
+      display: inline-block;
+      padding: 12px 25px;
+      background: #00aaff;
+      color: white;
+      font-size: 1.2em;
+      border-radius: 8px;
+      text-decoration: none;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      transition: transform 0.2s, background 0.3s;
+    }
+
+    a.back-btn:hover {
+      transform: scale(1.05);
+      background: #0088cc;
     }
   </style>
 </head>
@@ -29,10 +67,11 @@
   <h1>Demo Video</h1>
 
   <div class="video-container">
-<iframe src="https://studentuml-my.sharepoint.com/personal/christopher_peters1_student_uml_edu/_layouts/15/embed.aspx?UniqueId=090545bb-c92a-44cd-8033-b551279a4b3e&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="Full Demo.mp4"></iframe>
+    <iframe src="https://studentuml-my.sharepoint.com/personal/christopher_peters1_student_uml_edu/_layouts/15/embed.aspx?UniqueId=090545bb-c92a-44cd-8033-b551279a4b3e&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create"
+      frameborder="0" scrolling="no" allowfullscreen title="Full Demo.mp4"></iframe>
   </div>
 
-  <a href="../index.html">← Back to Main Page</a>
+  <a class="back-btn" href="../index.html">← Back to Main Page</a>
 
 </body>
 </html>
