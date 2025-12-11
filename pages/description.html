@@ -8,35 +8,53 @@
     body {
       font-family: Arial, sans-serif;
       text-align: center;
-      background-color: #f7f9fb;
       margin: 0;
-      padding: 20px;
+      padding: 0;
+      min-height: 100vh;
+
+      /* Dark gradient background */
+      background: linear-gradient(135deg, #0b1e39, #0a1023);
+      background-size: cover;
+
+      /* Flex to center the box */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
+
     h1 {
-      margin-bottom: 30px;
+      font-size: 4em;
+      margin: 25px 0 60px 0;
+      color: #ffffff;
     }
-    .content {
+
+    .container {
       max-width: 800px;
-      background: #fff;
+      background: #ffffffcc; /* semi-transparent for readability */
       border-radius: 12px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 20px rgba(0,50,150,0.15);
       padding: 30px;
-      margin: 0 auto;
       text-align: left;
       line-height: 1.6;
     }
+
     p {
       font-size: 1.05em;
       color: #333;
+      margin-bottom: 1em;
     }
+
     a {
       text-decoration: none;
       color: #0077cc;
       font-weight: bold;
     }
+
     a:hover {
       text-decoration: underline;
     }
+
     .back-link {
       display: inline-block;
       margin-top: 25px;
@@ -46,15 +64,17 @@
       border-radius: 8px;
       transition: background 0.3s;
     }
+
     .back-link:hover {
       background: #005fa3;
     }
   </style>
 </head>
 <body>
+
   <h1>Project Description</h1>
 
-  <div class="content">
+  <div class="container">
     <p>
       This project explores the development of an interactive 2D dungeon-crawler
       educational game designed for middle school students. The goal is to teach
@@ -69,5 +89,6 @@
   </div>
 
   <a class="back-link" href="../index.html">← Back to Main Page</a>
+
 </body>
 </html>

@@ -8,67 +8,111 @@
     body {
       font-family: Arial, sans-serif;
       text-align: center;
-      background-color: #f7f9fb;
       margin: 0;
-      padding: 20px;
+      padding: 40px 20px;
+      min-height: 100vh;
+
+      /* Matching dark gradient */
+      background: linear-gradient(135deg, #0b1e39, #0a1023);
+      background-size: cover;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
+
     h1 {
-      margin-bottom: 30px;
+      font-size: 4em;
+      margin: 10px 0 50px 0;
+      color: #ffffff;
     }
+
+    /* Grid layout with 2 columns, centered rows */
     .roster {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 30px;
-      max-width: 800px;
-      margin: 0 auto;
+      max-width: 900px;
+      width: 100%;
     }
+
+    /* This centers the 5th item */
+    .roster .member:nth-child(5) {
+      grid-column: 1 / span 2;
+      justify-self: center;
+      width: 60%;
+    }
+
     .member {
-      background: #fff;
+      background: #ffffffcc;
       border-radius: 12px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      padding: 20px;
+      box-shadow: 0 4px 20px rgba(0,50,150,0.2);
+      padding: 25px;
       transition: transform 0.2s;
     }
+
     .member:hover {
-      transform: scale(1.03);
+      transform: scale(1.04);
     }
+
     .member img {
-      width: 100%;
-      max-width: 150px;
+      width: 150px;
       height: 150px;
       object-fit: cover;
       border-radius: 50%;
       margin-bottom: 15px;
     }
+
     .member h2 {
-      margin: 10px 0 5px;
-      font-size: 1.2em;
+      margin: 8px 0 0 0;
+      font-size: 1.3em;
+      color: #222;
     }
+
+    .member h4 a {
+      color: #0077cc;
+      text-decoration: none;
+      font-size: 0.95em;
+    }
+
+    .member h4 a:hover {
+      text-decoration: underline;
+    }
+
     .member a {
       text-decoration: none;
       color: #0077cc;
       font-weight: bold;
     }
+
     .member a:hover {
       text-decoration: underline;
     }
+
     .back-link {
       display: inline-block;
-      margin-top: 25px;
+      margin-top: 40px;
       background: #0077cc;
       color: white;
-      padding: 10px 20px;
+      padding: 12px 25px;
       border-radius: 8px;
+      font-size: 1.1em;
       transition: background 0.3s;
+    }
+
+    .back-link:hover {
+      background: #005fa3;
     }
   </style>
 </head>
 <body>
+
   <h1>Team Roster</h1>
 
   <div class="roster">
+
     <div class="member">
-      <img src="..\docs\RosterPhotos\chrisProjectPhoto.png" alt="Member 1 Photo">
+      <img src="../docs/RosterPhotos/chrisProjectPhoto.png" alt="Chris Peters">
       <h2>Chris Peters</h2>
       <h2>Project Coordinator</h2>
       <h4><a href="mailto:cpetersjr@gmail.com">cpetersjr@gmail.com</a></h4>
@@ -76,7 +120,7 @@
     </div>
 
     <div class="member">
-      <img src="..\docs\RosterPhotos\MaxProjectPhoto.jpg" alt="Member 2 Photo">
+      <img src="../docs/RosterPhotos/MaxProjectPhoto.jpg" alt="Max Fitzgerald">
       <h2>Max Fitzgerald</h2>
       <h2>Project Developer</h2>
       <h4><a href="mailto:MxFz03@gmail.com">MxFz03@gmail.com</a></h4>
@@ -84,7 +128,7 @@
     </div>
 
     <div class="member">
-      <img src="..\docs\RosterPhotos\ShkambPrjectImage.jpg" alt="Member 3 Photo">
+      <img src="../docs/RosterPhotos/ShkambPrjectImage.jpg" alt="Shkamb Tafarshiku">
       <h2>Shkamb Tafarshiku</h2>
       <h2>Project Developer</h2>
       <h4><a href="mailto:shkambtafarshiku@gmail.com">shkambtafarshiku@gmail.com</a></h4>
@@ -92,21 +136,21 @@
     </div>
 
     <div class="member">
-      <img src="..\docs\RosterPhotos\ElijahProfilePictureSWE1.jpg" alt="Member 4 Photo">
+      <img src="../docs/RosterPhotos/ElijahProfilePictureSWE1.jpg" alt="Elijah Miles">
       <h2>Elijah Miles</h2>
       <h2>Project Developer</h2>
       <h4><a href="mailto:elijah_miles@student.uml.edu">elijah_miles@student.uml.edu</a></h4>
       <a href="https://www.linkedin.com/in/elijahmiles/">View Profile</a>
     </div>
 
-      <div class="member">
-      <img src="..\docs\RosterPhotos\ebenezer.jpg" alt="Member 5 Photo">
+    <div class="member">
+      <img src="../docs/RosterPhotos/ebenezer.jpeg" alt="Ebenezer Oloyede">
       <h2>Ebenezer Oloyede</h2>
       <h2>Project Developer</h2>
       <h4><a href="mailto:ebenezer_oloyede@student.uml.edu">ebenezer_oloyede@student.uml.edu</a></h4>
-      <a href="www.linkedin.com/in/ebenezer-oloyede-4b9740250">View Profile</a>
+      <a href="https://www.linkedin.com/in/ebenezer-oloyede-4b9740250">View Profile</a>
     </div>
-    
+
   </div>
 
   <a class="back-link" href="../index.html">← Back to Main Page</a>
