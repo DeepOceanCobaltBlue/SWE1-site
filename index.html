@@ -20,7 +20,10 @@
     }
 
     h1 {
-      margin-bottom: 30px;
+      font-size: 4em;
+      margin: 0 0 80px 0;
+      margin-top: 25px;
+      color: #ffffff;
     }
 
     .container { 
@@ -31,13 +34,6 @@
       padding: 30px; 
       margin: 0 auto; 
       text-align: left; 
-    }
-
-    h1 {
-      font-size: 4em;
-      margin: 0 0 120px 0;
-      margin-top: 25px;
-      color: #ffffff;
     }
 
     h2 {
@@ -64,22 +60,45 @@
     a:hover {
       text-decoration: underline;
     }
+
+    /* 🔽 Download button styling */
+    .download-btn {
+      display: inline-block;
+      margin: 0 auto 40px auto;
+      padding: 15px 40px;
+      background: #00aaff;
+      color: white;
+      font-size: 1.3em;
+      font-weight: bold;
+      border-radius: 10px;
+      text-decoration: none;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      transition: transform 0.2s, background 0.3s;
+    }
+
+    .download-btn:hover {
+      transform: scale(1.05);
+      background: #0088cc;
+    }
   </style>
 </head>
 <body>
 
   <h1>PUZZLER</h1>
 
+  <!-- 🔽 Placeholder Download Button -->
+  <a class="download-btn" href="https://github.com/DeepOceanCobaltBlue/SWE_final.git">Download Game</a>
+
   <div class="container">
 
-    <h2>Core Pages</h2>
+    <h2>About Us And Our Project</h2>
     <ul>
       <li><a href="pages/background.html">Project Background & Motivation</a></li>
       <li><a href="pages/description.html">Project Description</a></li>
       <li><a href="pages/team.html">Team Roster</a></li>
     </ul>
 
-    <h2>Placeholder Links</h2>
+    <h2>Project Documents</h2>
     <ul>
       <li><a href="docs/SRSV2.pdf" target="_blank" rel="noopener">SRS</a></li>
       <li><a href="docs/prototypes/index.html">Prototypes</a></li>
@@ -87,14 +106,14 @@
       <li><a href="docs/bibliography.pdf" target="_blank" rel="noopener">Bibliography</a></li>
     </ul>
 
-   <h2>Intermediate Items</h2>
-   <ul>
+    <h2>Resources</h2>
+    <ul>
       <li><a href="docs/Usecase-diagram.png" target="_blank">Use Case Diagram</a></li>
       <li><a href="docs/class.png" target="_blank">Class Diagram</a></li>
       <li><a href="docs/State-diagram.png" target="_blank">State Diagram</a></li>
       <li><a href="docs/seq_1.png" target="_blank">Sequence Diagram 1</a></li>
-     <li><a href="docs/seq_2.png" target="_blank">Sequence Diagram 2</a></li>
-   </ul>
+      <li><a href="docs/seq_2.png" target="_blank">Sequence Diagram 2</a></li>
+    </ul>
 
   </div>
 
